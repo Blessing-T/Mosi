@@ -5,12 +5,12 @@ import BouncingCircle from '../Components/BouncingCircle';
 
 // Fix image imports for assets in src/assets/
 import frame34 from '../Components/images/Frame 34.png';
-import rectangle165 from '../Components/images/rectangle 165.png';
+import rectangle165 from '../Components/images/Rectangle 165.png';
 import diamond from '../Components/images/diamond.png';
 import download8 from '../Components/images/download (8) 1.png';
 import news1 from '../Components/images/News 1.png';
 import news2 from '../Components/images/News2.png';
-import rectangle103 from '../Components/images/rectangle 103.png';
+import Rectangle103 from '../Components/images/Rectangle 103.png';
 
 const targetDate = new Date("2025-12-31T23:59:59");
 
