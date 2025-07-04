@@ -10,7 +10,7 @@ import {
 
 function FindMore() {
   return (
-    <section className="p-10 h-[2000px]  w-[100%] flex flex-col  mt-10 overflow-x-hidden ">
+    <section className="p-10 xl:h-[2000px] sm:h-[2200px] sm:overflow-y-hidden  w-[100%] flex flex-col  mt-10 overflow-x-hidden ">
       {/*4 cards*/}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-28 p-8 text-center">

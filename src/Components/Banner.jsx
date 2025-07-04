@@ -6,7 +6,7 @@ import bgImage from "./images/Rectangle190.png";
 function Banner() {
   return (
     <div
-      className=" relative w-full h-[499px]  bg-cover bg-center bg-no-repeat "
+      className=" relative w-full h-[499px]  bg-cover  bg-center bg-no-repeat "
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className=" w-full   absolute  inset-0 bg-black bg-opacity-40 z-10"></div>
