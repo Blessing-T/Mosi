@@ -7,6 +7,7 @@ import  Contact  from './pages/Contact'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import Portal from './pages/Portal'
+import Home from './pages/Home'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div>
   <Navbar />
       <Routes>
+        <Route path='/' element={<Home />} />
         <Route path='/student' element={<Student/>} />
         <Route path='/contact' element={<Contact/>} />
          <Route path='/portal' element={<Portal/>} />
