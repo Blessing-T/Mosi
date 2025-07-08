@@ -9,7 +9,7 @@ import rectangle165 from '../Components/images/Rectangle 165.png';
 import diamond from '../Components/images/diamond.png';
 import download8 from '../Components/images/download (8) 1.png';
 import news1 from '../Components/images/News 1.png';
-import news2 from '../Components/images/News2.png';
+import news2 from '../Components/images/news2.png';
 
 
 const targetDate = new Date("2025-12-31T23:59:59");
