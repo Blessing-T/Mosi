@@ -70,19 +70,19 @@ function FindMore() {
       <div className="mt-20 flex flex-col lg:flex-row items-start justify-between gap-16 xl:mr-10 ">
         <div className="relative w-full lg:w-1/2 h-[430px] flex items-start justify-center">
           <img
-            src="src/Components/images/Rectangle 204.png"
+            src="./Rectangle 204.png"
             alt=""
             className="w-[300px] h-[360px] object-cover rounded-md ml-7"
           />
 
           <img
-            src="src/Components/images/Rectangle 202.png"
+            src="./Rectangle 202.png"
             alt=""
             className="absolute top-[-40px] left-[30px] w-[200px] h-[231px] object-cover rounded-md   ml-14"
           />
 
           <img
-            src="src/Components/images/Rectangle 203.png"
+            src="./Rectangle 203.png"
             alt=""
             className="absolute bottom-[-35px] left-[180px] w-[222px] h-[231px] object-cover rounded-md   ml-48 z-20"
           />
@@ -160,7 +160,7 @@ function FindMore() {
 
             <div className="flex flex-col border rounded-lg px-6 py-4 shadow-sm">
               <div className="flex items-center gap-2 mb-1">
-                <img src="src/Components/images/Rectangle 215.png" alt="" />
+                <img src="./Rectangle 215.png" alt="" />
                 <h3 className="text-lg font-semibold font-roboto">HEXCO</h3>
               </div>
               <p className="text-lg text-gray-600 ml-8 font-roboto">
@@ -171,13 +171,13 @@ function FindMore() {
         </div>
         <div className="relative w-full lg:w-1/2 h-[430px] flex justify-center  ">
           <img
-            src="src/Components/images/Rectangle 207.png"
+            src="./Rectangle 207.png"
             alt=""
             className="w-[323px] h-[460px] object-cover rounded-md ml-9"
           />
 
           <img
-            src="src/Components/images/Rectangle208.png"
+            src="./Rectangle208.png"
             alt=""
             className="absolute top-[170px] left-[-80px] w-[200px] h-[231px] object-cover rounded-md   ml-20"
           />
@@ -192,7 +192,7 @@ function FindMore() {
       {/* Card 2*/}
       <div className="relative w-full h-[410px] rounded-lg  shadow-md mt-36">
         <img
-          src="src/Components/images/download (7) 1 (2).png"
+          src="./download (7) 1 (2).png"
           alt=""
           className="w-full h-full object-cover rounded-md "
         />

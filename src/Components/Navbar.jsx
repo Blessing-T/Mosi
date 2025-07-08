@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-2">
           <Link to="/">
             <img
-              src="src/Components/images/rectangle 103.png"
+              src="./Rectangle 103.png"
               alt="Mosi Oa Tunya Logo"
               className="w-10 h-10 object-contain"
             />
