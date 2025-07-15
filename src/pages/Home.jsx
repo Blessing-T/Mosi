@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import Navbar from "../Components/Navbar";
 import BouncingCircle from "../Components/BouncingCircle";
@@ -114,7 +115,7 @@ const MosiOaTunyaWebsite = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex-1 max-w-xl">
               <div className="flex items-center mb-6">
-                <div className="bg-red-200 rounded-full px-6 py-3 flex items-center flex justify-center gap-4 space-x-2">
+                <div className="bg-red-200 rounded-full px-6 py-3 flex items-center justify-center gap-4 space-x-2">
                   <span className="text-2xl font-bold text-red-800">1368</span>
                   <span className="text-red-600">+</span>
                 </div>
@@ -132,7 +133,7 @@ const MosiOaTunyaWebsite = () => {
                 and discovery!
               </p>
               <button className="bg-red-800 text-white px-6 md:px-8 py-3 rounded-md hover:bg-gray-800 transition-colors">
-                Enroll Now
+                <Link to="/enroll"> Enroll Now</Link>
               </button>
             </div>
             <div className="flex-1 flex justify-center md:justify-end w-full">

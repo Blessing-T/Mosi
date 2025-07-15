@@ -50,7 +50,7 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <button className="bg-red-900 text-white px-4 py-2 rounded-md hover:bg-red-600 transition-colors">
-            <Link to="/portal">Portal</Link>
+            <Link to="/">Portal</Link>
           </button>
         </div>
       </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
             Contact
           </Link>
           <Link
-            to="/portal"
+            to="/"
             className="inline-block bg-red-900 px-4 py-2 rounded-md hover:bg-red-600"
           >
             Portal
