@@ -81,7 +81,7 @@ const MosiOaTunyaWebsite = () => {
 
   return (
     <div className="ingonyama min-h-screen">
-      <section className="relative bg-white overflow-hidden min-h-[500px]">
+      <section className="relative bg-white overflow-hidden min-h-[500px] flex items-center justify-center">
         <Navbar />
         <BouncingCircle
           size={96}
@@ -115,7 +115,7 @@ const MosiOaTunyaWebsite = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex-1 max-w-xl">
               <div className="flex items-center mb-6">
-                <div className="bg-red-200 rounded-full px-6 py-3 flex items-center justify-center gap-4 space-x-2">
+                <div className="bg-red-200 rounded-full px-6 py-3 items-center flex justify-center gap-4 space-x-2">
                   <span className="text-2xl font-bold text-red-800">1368</span>
                   <span className="text-red-600">+</span>
                 </div>
@@ -133,7 +133,7 @@ const MosiOaTunyaWebsite = () => {
                 and discovery!
               </p>
               <button className="bg-red-800 text-white px-6 md:px-8 py-3 rounded-md hover:bg-gray-800 transition-colors">
-                <Link to="/enroll"> Enroll Now</Link>
+                Enroll Now
               </button>
             </div>
             <div className="flex-1 flex justify-center md:justify-end w-full">
