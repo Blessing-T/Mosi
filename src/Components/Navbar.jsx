@@ -32,7 +32,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link to="/" className="hover:text-red-200">
+            <Link to="/ComingSoon" className="hover:text-red-200">
               Administration
             </Link>
           </li>
