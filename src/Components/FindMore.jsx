@@ -12,7 +12,6 @@ function FindMore() {
   return (
     <section className="p-10 xl:h-[2000px] sm:h-[2200px] sm:overflow-y-hidden  w-[100%] flex flex-col  mt-10 overflow-x-hidden ">
       {/*4 cards*/}
-
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-28 p-8 text-center">
         <div>
           <div className="bg-red-700 p-3 rounded-md inline-block mb-2">
@@ -198,7 +197,7 @@ function FindMore() {
         />
 
         <div className="absolute inset-0  flex items-end">
-          <div className=" text-white text-2xl font-roboto  ml-28 mb-28  max-w-3xl ">
+          <div className=" text-white sm:ml-25 sm:mb-12 pt-10 text-[19px] md:text-2xl font-roboto  md:ml-28 md:mb-28  max-w-3xl ">
             Mosi-Oa-Tunya High School, located in Victoria Falls, Zimbabwe, is a
             distinguished educational institution established in 1982. Named
             after the indigenous term for Victoria Falls, meaning "The Smoke

@@ -23,19 +23,19 @@ function Enroll() {
             <input
               type="text"
               placeholder="First Name"
-              className=" placeholder-[#800000] opacity-[60%] flex-1 border border-[#800000] p-3 rounded-md outline-none"
+              className=" placeholder-[#80000069]  flex-1 border border-[#800000] p-3 rounded-md outline-none"
             />
             <input
               type="text"
               placeholder="Last Name"
-              className=" placeholder-[#800000] opacity-[60%] flex-1 border border-[#800000] p-3 rounded-md outline-none"
+              className=" placeholder-[#80000069]  flex-1 border border-[#800000] p-3 rounded-md outline-none"
             />
           </div>
 
           <input
             type="text"
             placeholder="Address "
-            className=" placeholder-[#800000] opacity-[60%] w-full border border-[#800000]  p-3 rounded-md outline-none"
+            className=" placeholder-[#80000069]  w-full border border-[#800000]  p-3 rounded-md outline-none"
           />
 
           <div className="flex flex-col md:flex-row gap-4">
@@ -49,20 +49,20 @@ function Enroll() {
               <input
                 type="tel"
                 placeholder="Phone Number"
-                className=" placeholder-[#800000] opacity-[60%] flex-1 p-3 outline-none"
+                className=" placeholder-[#80000069] opacity-[60%] flex-1 p-3 outline-none"
               />
             </div>
 
             <input
               type="email"
               placeholder="Email"
-              className=" placeholder-[#800000] opacity-[60%] flex-1 border border-[#800000] p-3 rounded-md outline-none"
+              className=" placeholder-[#80000069]  flex-1 border border-[#800000] p-3 rounded-md outline-none"
               required
             />
           </div>
 
           <div className="flex flex-col md:flex-row gap-4">
-            <select className="text-[#800000] opacity-[60%] flex-1 border border-[#800000] p-3 rounded-md outline-none ">
+            <select className="text-[#80000069]  flex-1 border border-[#800000] p-3 rounded-md outline-none ">
               <option disabled selected>
                 Gender
               </option>
@@ -73,12 +73,12 @@ function Enroll() {
             <input
               type="text"
               placeholder="Guardian Full Name"
-              className=" placeholder-[#800000] opacity-[60%] flex-1 border border-[#800000] p-3 rounded-md outline-none"
+              className=" placeholder-[#80000069]  flex-1 border border-[#800000] p-3 rounded-md outline-none"
             />
           </div>
 
           <div className="flex flex-col md:flex-row gap-4">
-            <select className=" text-[#800000] opacity-[60%] flex-1 border border-[#800000] p-3 rounded-md outline-none ">
+            <select className=" text-[#80000069]  flex-1 border border-[#800000] p-3 rounded-md outline-none ">
               <option disabled selected>
                 Form
               </option>
@@ -92,7 +92,7 @@ function Enroll() {
             <input
               type="text"
               placeholder="Guardian Number"
-              className=" placeholder-[#800000] opacity-[60%] flex-1 border border-[#800000] p-3 rounded-md outline-none"
+              className=" placeholder-[#80000069]  flex-1 border border-[#800000] p-3 rounded-md outline-none"
             />
           </div>
 
