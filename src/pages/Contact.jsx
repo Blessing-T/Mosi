@@ -22,7 +22,6 @@ function Contact() {
         </div>
       </div>
 
-<<<<<<< HEAD
       <div className="w-full min-h-[900px] mt-28 mb-20  px-4">
         <div className="flex flex-col md:flex-row md:items-start items-center justify-center font-roboto gap-9 flex-wrap">
           <div className="flex flex-col text-center md:text-left">
@@ -30,22 +29,6 @@ function Contact() {
             <h1 className="text-[#800000] text-4xl">
               GET IN <br /> TOUCH
             </h1>
-=======
-     
-      <div className=" px-4 mt-28 mb-20 flex items-center justify-center">
-        <form className="w-full max-w-4xl space-y-4 font-roboto ">
-          <div className="flex flex-col md:flex-row gap-4">
-            <input
-              type="text"
-              placeholder="First Name"
-              className=" placeholder-[#800000] opacity-[60%] flex-1 border border-[#800000] p-3 rounded-md outline-none"
-            />
-            <input
-              type="text"
-              placeholder="Last Name"
-              className=" placeholder-[#800000] opacity-[60%] flex-1 border border-[#800000] p-3 rounded-md outline-none"
-            />
->>>>>>> a29aa9f (changes)
           </div>
 
           <div className="w-full sm:w-[302px] h-[292px] bg-[#80000041] rounded-lg p-5">

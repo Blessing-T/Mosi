@@ -77,7 +77,7 @@ function FindMore() {
           <img
             src="./Rectangle 202.png"
             alt=""
-            className="absolute top-[-40px] left-[30px] w-[200px] h-[231px] object-cover rounded-md   ml-14"
+            className="absolute top-[-40px] left-[30px]  w-[200px] h-[231px] object-cover rounded-md   ml-14"
           />
 
           <img

@@ -1,6 +1,7 @@
 import React from "react";
 import bgImage from "./Rectangle.png";
 
+
 function Enroll() {
   return (
     <>
@@ -100,7 +101,9 @@ function Enroll() {
             type="submit"
             className="mt-6 bg-[#800000] text-white px-6 py-3 rounded-md hover:bg-red-900"
           >
+            
             Enroll Now
+            
           </button>
         </form>
       </div>

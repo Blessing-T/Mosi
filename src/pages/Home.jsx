@@ -133,7 +133,9 @@ const MosiOaTunyaWebsite = () => {
                 and discovery!
               </p>
               <button className="bg-red-800 text-white px-6 md:px-8 py-3 rounded-md hover:bg-gray-800 transition-colors">
+              <Link to="/enroll">
                 Enroll Now
+              </Link>
               </button>
             </div>
             <div className="flex-1 flex justify-center md:justify-end w-full">
