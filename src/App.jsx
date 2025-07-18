@@ -22,6 +22,8 @@ function App() {
          <Route path='/enroll' element={<Enroll/>} />
          <Route path="/signin" element={<SignIn />} />
          <Route path="/ComingSoon" element={<ComingSoon />} />
+        <Route path='/portal' element={<Portal />} />
+        <Route path='/loginIn' element={<LoginIn />} />
       </Routes>
       <Footer />
     </div>

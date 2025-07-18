@@ -32,11 +32,11 @@ function Contact() {
           </div>
 
           <div className="w-full sm:w-[302px] h-[292px] bg-[#80000041] rounded-lg p-5">
-            <MapPin className="h-7 w-7 text-[#800000]" />
-            <h6 className="mt-2 text-lg font-semibold text-[#800000]">
+            <MapPin className="h-12 w-12 text-[#800000]" />
+            <h6 className="mt-4 text-lg font-semibold text-[#800000]">
               School Location
             </h6>
-            <p className="mt-2 text-[#000000]">
+            <p className="mt-6 text-[#000000]">
               1523 Chinotimba <br />
               Victoria Falls, Zimbabwe <br />
               P.O. Box 176
@@ -44,11 +44,11 @@ function Contact() {
           </div>
 
           <div className="w-full sm:w-[302px] h-[292px] bg-[#80000041] rounded-lg p-5">
-            <Clock className="h-7 w-7 text-[#800000]" />
-            <h6 className="mt-2 text-lg font-semibold text-[#800000]">
+            <Clock className="h-12 w-12 text-[#800000]" />
+            <h6 className="mt-4 text-lg font-semibold text-[#800000]">
               Office Hours
             </h6>
-            <p className="mt-2 text-[#000000]">
+            <p className="mt-6 text-[#000000]">
               Monday - Friday: 7:30AM - 4:30PM <br />
               Saturday: 08:00 AM - 12:00 PM <br />
               Sunday: Closed
@@ -56,11 +56,11 @@ function Contact() {
           </div>
 
           <div className="w-full sm:w-[302px] h-[292px] bg-[#80000041] rounded-lg p-5">
-            <Headphones className="h-7 w-7 text-[#800000]" />
-            <h6 className="mt-2 text-lg font-semibold text-[#800000]">
+            <Headphones className="h-12 w-12 text-[#800000]" />
+            <h6 className="mt-4 text-lg font-semibold text-[#800000]">
               Communication
             </h6>
-            <p className="mt-2 text-[#000000]">
+            <p className="mt-6 text-[#000000]">
               +263 13 44568
               <br />
               admissions@mosioatunyahigh.zw
@@ -70,7 +70,7 @@ function Contact() {
           </div>
         </div>
 
-        <div className="bg-[#80000041] max-w-[90%] min-h-[542px] mt-20 flex justify-center items-center mx-4 md:mx-20 rounded-md">
+        <div className="bg-[#80000041] max-w-[90%] min-h-[542px]  mt-20 flex justify-center items-center mx-4 md:mx-20 rounded-md">
           <div className="w-full max-w-[1200px] flex flex-col md:flex-row justify-between items-start md:ml-10 md:mb-0 gap-10">
             <div className="w-full md:w-1/2 h-[346px] bg-[#ffffff94] rounded-md p-6">
               <form className="flex flex-col gap-8">
@@ -94,20 +94,20 @@ function Contact() {
               </form>
               <button
                 type="submit"
-                className="bg-[#800000] text-white px-6 py-2 rounded-md w-fit mt-16 hover:bg-[#5e0000]"
+                className="bg-[#800000] text-white px-6 py-2 rounded-md w-fit mt-16  hover:bg-[#5e0000]"
               >
                 Send Message
               </button>
             </div>
 
-            <div className="w-full md:w-1/2 p-2">
+            <div className="w-full md:w-1/2 p-2 mt-12">
               <h3 className="font-semibold font-roboto text-lg mb-2">
                 Have any query?
               </h3>
               <h2 className="text-4xl font-semibold text-[#800000] mb-4">
                 CONTACT US
               </h2>
-              <p className=" font-roboto text-gray-800">
+              <p className=" font-roboto text-gray-800 font-semibold">
                 Have any questions about enrollment, programs, or visiting our
                 school? Our team is here to assist you. Please use the form
                 below or reach out using the provided contact details.

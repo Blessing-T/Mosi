@@ -6,11 +6,12 @@ import {
   Award,
   Drama,
   Dribbble,
+  Trophy
 } from "lucide-react";
 
 function FindMore() {
   return (
-    <section className="p-10 xl:h-[2000px] sm:h-[2200px] sm:overflow-y-hidden  w-[100%] flex flex-col  mt-10 overflow-x-hidden ">
+    <section className="p-10 xl:h-[2000px] sm:h-[2200px] md:h-[3100px] sm:overflow-y-hidden  w-[100%] flex flex-col  mt-10 overflow-x-hidden ">
       {/*4 cards*/}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-28 p-8 text-center">
         <div>
@@ -39,7 +40,7 @@ function FindMore() {
 
         <div>
           <div className="bg-red-700 p-3 rounded-md inline-block mb-2">
-            <Award className="text-white w-8 h-8" />
+            <Award className="text-white  w-8 h-8" />
           </div>
           <h3 className="text-2xl font-bold">10+</h3>
           <p className="text-red-700 font-semibold font-roboto">
@@ -71,26 +72,28 @@ function FindMore() {
           <img
             src="./Rectangle 204.png"
             alt=""
-            className="w-[300px] h-[360px] object-cover rounded-md ml-7"
+            className="w-[250px] h-[300px] lg:w-[300px] lg:h-[360px] object-cover rounded-md ml-4 lg:ml-7"
           />
 
           <img
             src="./Rectangle 202.png"
             alt=""
-            className="absolute top-[-40px] left-[30px]  w-[200px] h-[231px] object-cover rounded-md   ml-14"
+            className="absolute top-[-30px] left-[-15px] w-[160px] h-[190px] lg:top-[-60px] lg:left-[80px] md:top-[-40px] md:left-[150px]  lg:w-[200px] lg:h-[231px] object-cover rounded-md "
           />
 
           <img
             src="./Rectangle 203.png"
             alt=""
-            className="absolute bottom-[-35px] left-[180px] w-[222px] h-[231px] object-cover rounded-md   ml-48 z-20"
+            className="absolute bottom-[30px] left-[130px] w-[190px] h-[190px] lg:bottom-[-35px] lg:left-[365px md:left-[400px] lg:w-[222px] lg:h-[231px] object-cover rounded-md z-20"
           />
 
-          <div className="absolute bottom-[-50px] left-[110px] w-[320px] h-[130px] bg-red-700 text-white px-5 py-4 rounded-md flex items-center gap-3 shadow-xl z-10">
-            <Award className="w-7 h-7" />
+          <div className="absolute bottom-[20px] left-[-15px] w-[280px] h-[110px] bg-red-700 text-white px-4 py-3 rounded-md flex items-center gap-3 shadow-xl z-10 md:left-[200px] lg:bottom-[-50px] lg:left-[110px] lg:w-[320px] lg:h-[130px] lg:px-5 lg:py-4">
+            <Trophy className="w-6 h-6  lg:w-10 lg:h-10" />
             <div>
-              <p className="text-2xl font-bold font-roboto leading-none">60+</p>
-              <p className="text-sm leading-tight mt-1 font-roboto">
+              <p className="text-xl lg:text-2xl font-bold font-roboto leading-none">
+                60+
+              </p>
+              <p className="text-xs lg:text-sm leading-tight mt-1 font-roboto">
                 Years Of Experience
               </p>
             </div>
@@ -189,7 +192,7 @@ function FindMore() {
       </div>
 
       {/* Card 2*/}
-      <div className="relative w-full h-[410px] rounded-lg  shadow-md mt-36">
+      <div className="relative w-full h-[410px] rounded-lg  shadow-md mt-36 ">
         <img
           src="./download (7) 1 (2).png"
           alt=""

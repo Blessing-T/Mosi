@@ -22,20 +22,24 @@ function Portal() {
               <div className="text-2xl mb-2">✔️</div>
               <h2 className="text-lg font-semibold mb-4">Student Portal</h2>
               <button className="bg-[#9E0000] text-white px-4 py-2 rounded">
+                <Link to="/loginIn">
                 Click Here
+                </Link>
               </button>
             </div>
             <div className="bg-red-50 border rounded-md px-6 py-8 w-56 flex flex-col items-center">
               <div className="text-2xl mb-2">🏫</div>
               <h2 className="text-lg font-semibold mb-4">Parent Portal</h2>
               <button className="border border-red-800 text-red-800 px-4 py-2 rounded">
+               <Link to="/loginIn">
                 Click Here
+               </Link>
               </button>
             </div>
           </div>
 
           <Link
-            to="/admin"
+            to="/Comingsoon"
             className="absolute top-4 right-4 border border-red-800 text-red-800 rounded px-4 py-1 flex items-center space-x-2"
           >
             <span>Admin</span>

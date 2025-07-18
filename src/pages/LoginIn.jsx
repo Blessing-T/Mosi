@@ -1,17 +1,20 @@
 import React from "react";
 import bgImage from "./Rectangle.png";
+import { Link } from "react-router-dom";
 
 function LoginIn() {
   return (
     <>
-      <header className="w-full h-full flex items-center justify-center flex-col bg-cover bg-center bg-no-repeat text-white py-16 text-center"
-                style={{ backgroundImage: `url(${bgImage})` }}
-            >
-        <h1 className="text-white  text-4xl font-playfair font-bold text-center mb-10">Welcome Back</h1>
+      <header
+        className="w-full h-full flex items-center justify-center flex-col bg-cover bg-center bg-no-repeat text-white py-16 text-center"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      >
+        <h1 className="text-white  text-4xl font-playfair font-bold text-center mb-10">
+          Welcome Back
+        </h1>
         <p className="mt-2">Sign in to access your student portal</p>
       </header>
 
-      
       <main className="px-4 mt-28 mb-20 flex-grow flex justify-center items-center bg-white relative">
         <div className="w-full max-w-md p-6 border rounded shadow-md bg-white z-10">
           <form className="space-y-4">
@@ -42,7 +45,9 @@ function LoginIn() {
               <label className="flex items-center">
                 <input type="checkbox" className="mr-2" /> Remember me
               </label>
-              <a href="#" className="text-red-700 hover:underline">Forgot Password?</a>
+              <a href="#" className="text-red-700 hover:underline">
+                Forgot Password?
+              </a>
             </div>
             <button
               type="submit"
@@ -52,10 +57,13 @@ function LoginIn() {
             </button>
           </form>
           <p className="text-center text-sm mt-4">
-            Don’t have an account?{' '}
-            <a href="#" className="text-red-700 font-semibold hover:underline">
+            Don’t have an account?{" "}
+            <Link
+              to="/signin"
+              className="text-red-700 font-semibold hover:underline"
+            >
               Register as New Student
-            </a>
+            </Link>
           </p>
         </div>
       </main>

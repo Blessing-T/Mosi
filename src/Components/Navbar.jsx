@@ -32,7 +32,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link to="/ComingSoon" className="hover:text-red-200">
+            <Link to="/enroll" className="hover:text-red-200">
               Administration
             </Link>
           </li>
@@ -50,13 +50,13 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <button className="bg-red-900 text-white px-4 py-2 rounded-md hover:bg-red-600 transition-colors">
-            <Link to="/signin">Portal</Link>
+            <Link to="/portal">Portal</Link>
           </button>
         </div>
       </div>
 
       {menuOpen && (
-        <div className="md:hidden mt-4 flex flex-col space-y-2 items-start text-white px-4">
+        <div className="md:hidden mt-4 flex flex-col space-y-2 items-end  text-white px-4">
           <Link to="/" className="hover:text-red-200">
             Home
           </Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
             Contact
           </Link>
           <Link
-            to="/"
+            to="/portal"
             className="inline-block bg-red-900 px-4 py-2 rounded-md hover:bg-red-600"
           >
             Portal
