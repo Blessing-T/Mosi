@@ -6,12 +6,12 @@ import {
   Award,
   Drama,
   Dribbble,
-  Trophy
+  Trophy,
 } from "lucide-react";
 
 function FindMore() {
   return (
-    <section className="p-10 xl:h-[2000px] sm:h-[2200px] md:h-[3100px] sm:overflow-y-hidden  w-[100%] flex flex-col  mt-10 overflow-x-hidden ">
+    <section className="p-10 xl:h-[2000px] sm:h-[2200px] md:h-[3150px] sm:overflow-y-hidden  w-[100%] flex flex-col  mt-10 overflow-x-hidden ">
       {/*4 cards*/}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-28 p-8 text-center">
         <div>
@@ -87,13 +87,13 @@ function FindMore() {
             className="absolute bottom-[30px] left-[130px] w-[190px] h-[190px] lg:bottom-[-35px] lg:left-[365px md:left-[400px] lg:w-[222px] lg:h-[231px] object-cover rounded-md z-20"
           />
 
-          <div className="absolute bottom-[20px] left-[-15px] w-[280px] h-[110px] bg-red-700 text-white px-4 py-3 rounded-md flex items-center gap-3 shadow-xl z-10 md:left-[200px] lg:bottom-[-50px] lg:left-[110px] lg:w-[320px] lg:h-[130px] lg:px-5 lg:py-4">
+          <div className="absolute bottom-[20px] left-[-25px] w-[180px] h-[110px] md:w-[320px] md:h-[130px] bg-red-700 text-white px-4 py-3 rounded-md flex items-center gap-3 shadow-xl z-10 md:left-[150px] lg:bottom-[-50px] lg:left-[110px] lg:w-[320px] lg:h-[130px] lg:px-5 lg:py-4">
             <Trophy className="w-6 h-6  lg:w-10 lg:h-10" />
             <div>
               <p className="text-xl lg:text-2xl font-bold font-roboto leading-none">
                 60+
               </p>
-              <p className="text-xs lg:text-sm leading-tight mt-1 font-roboto">
+              <p className="text-sm lg:text-sm  leading-tight mt-1 font-roboto">
                 Years Of Experience
               </p>
             </div>
@@ -181,9 +181,9 @@ function FindMore() {
           <img
             src="./Rectangle208.png"
             alt=""
-            className="absolute top-[170px] left-[-80px] w-[200px] h-[231px] object-cover rounded-md   ml-20"
+            className="absolute top-[190px] left-[-100px] lg:top-[180px] lg:left-[-70px] md:top-[170px] md:left-[10px] w-[200px] h-[231px] object-cover rounded-md   ml-20"
           />
-          <div className="absolute top-[290px] left-[150px]  bg-red-700 w-40 h-40 rounded-full flex justify-center items-center">
+          <div className="absolute top-[300px] left-[140px] lg:top-[290px] lg:left-[160px] md:top-[290px] md:left-[250px] bg-red-700 w-36 h-36 lg:w-40 lg:h-40 rounded-full flex justify-center items-center">
             <div className="text-sm font-bold text-white">
               1,300+ Active Learns
             </div>
@@ -200,7 +200,7 @@ function FindMore() {
         />
 
         <div className="absolute inset-0  flex items-end">
-          <div className=" text-white sm:ml-25 sm:mb-12 pt-10 text-[19px] md:text-2xl font-roboto  md:ml-28 md:mb-28  max-w-3xl ">
+          <div className=" text-white ml-25 mb-12 pt-10  text-[19px] md:text-2xl font-roboto  md:px-10 px-5  max-w-3xl ">
             Mosi-Oa-Tunya High School, located in Victoria Falls, Zimbabwe, is a
             distinguished educational institution established in 1982. Named
             after the indigenous term for Victoria Falls, meaning "The Smoke

@@ -17,8 +17,8 @@ function Banner() {
           Student Life
         </h1>
         <div className="w-40 h-1 bg-gradient-to-r from-[#800000] via-[#800000] to-white mb-6"></div>
-        <p className="text-white font-roboto   text-xl ">
-          Students enjoy a balanced mix of academics, sports, club <br />
+        <p className="text-white font-roboto   text-base sm:text-lg md:text-xl ">
+          Students enjoy a balanced mix of academics, sports, club <br className="hidden sm:block" />
           and cultural activities preparing for a bright future
         </p>
       </div>
