@@ -1,5 +1,7 @@
 import React from "react";
 import bgImage from "./Rectangle225.png";
+import { Link } from "react-router-dom";
+
 
 function SignIn() {
   return (
@@ -63,7 +65,9 @@ function SignIn() {
             type="submit"
             className="mt-6 bg-[#800000] text-white px-6 py-3 rounded-md hover:bg-red-900"
           >
+            <Link to="/Student Portal">
             Sign In
+            </Link>
           </button>
         </form>
       </div>
