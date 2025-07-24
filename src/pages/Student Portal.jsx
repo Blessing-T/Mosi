@@ -1,5 +1,16 @@
 import { useState } from 'react';
-import { Bell, User, Calendar, Edit, BookOpen, CheckCircle, FileText, Award, Activity } from 'lucide-react';
+import {
+  Bell,
+  Calendar,
+  Edit,
+  BookOpen,
+  CheckCircle,
+  FileText,
+  Activity,
+  Clock,
+  CircleDot,
+} from 'lucide-react';
+
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 
@@ -10,36 +21,24 @@ export default function StudentDashboard() {
       page: 'Book 4, pg 206',
       date: '06 Jul',
       status: 'Due',
-      border: 'border-red-500',
-      bg: 'bg-red-50',
-      badgeColor: 'bg-red-500',
     },
     {
       subject: 'Ndebele Essay',
       page: 'Book 4, pg 42',
       date: '14 Jul',
       status: 'Open',
-      border: 'border-black',
-      bg: 'bg-gray-50',
-      badgeColor: 'bg-black',
     },
     {
       subject: 'Mathematics Matrices',
       page: 'Book 4, pg 226',
       date: '16 Jul',
       status: 'Open',
-      border: 'border-black',
-      bg: 'bg-gray-50',
-      badgeColor: 'bg-black',
     },
     {
       subject: 'Physics Lab Report',
-      page: '',
+      page: 'Syllabus, 20',
       date: '20 Jul',
       status: 'Waiting',
-      border: 'border-gray-400',
-      bg: 'bg-gray-50',
-      badgeColor: 'bg-gray-400',
     },
   ]);
 
@@ -67,7 +66,7 @@ export default function StudentDashboard() {
             <p className="text-gray-500">Ready to continue your learning journey?</p>
           </div>
 
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 ">
             <div className="w-8 h-8 rounded-full flex items-center justify-center">
               <Bell className="w-5 h-5 text-black" />
             </div>
@@ -82,68 +81,95 @@ export default function StudentDashboard() {
           </div>
         </div>
 
-        <section className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-  <StatBox
-    title="Overall GPA"
-    value="3.8"
-    Icon={Activity}
-    iconBg="bg-purple-200" 
-  />
-  <StatBox
-    title="Subjects"
-    value="10"
-    Icon={BookOpen}
-    iconBg="bg-green-200"
-  />
-  <StatBox
-    title="Passes"
-    value="8"
-    Icon={CheckCircle}
-    iconBg="bg-purple-100" e
-  />
-  <StatBox
-    title="Assignments Due"
-    value="4"
-    Icon={FileText}
-    iconBg="bg-orange-200" 
-  />
-</section>
-       
-        <Section title={
-  <div className="flex items-center space-x-2">
-    <Calendar className="w-5 h-5 text-gray-600 " />
-    <span className='text-2xl'>Upcoming Assignments</span>
-  </div>
-}>
+        <section className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 ">
+          <StatBox
+            title="Overall GPA"
+            value="3.8"
+            Icon={Activity}
+            iconBg="bg-purple-200"
+          />
+          <StatBox
+            title="Subjects"
+            value="10"
+            Icon={BookOpen}
+            iconBg="bg-green-200"
+          />
+          <StatBox
+            title="Passes"
+            value="8"
+            Icon={CheckCircle}
+            iconBg="bg-purple-100"
+          />
+          <StatBox
+            title="Assignments Due"
+            value="4"
+            Icon={CircleDot}
+            iconBg="bg-orange-200"
+          />
+        </section>
+
+        <Section
+          title={
+            <div className="flex items-center space-x-2">
+              <Calendar className="w-5 h-5 text-black" />
+              <span className="text-2xl text-black">Upcoming Assignments</span>
+            </div>
+          }
+        >
           <div className="space-y-4">
-            {assignments.map((item, i) => (
-              <div
-                key={i}
-                className={`flex items-center justify-between p-3 border-l-4 ${item.border} ${item.bg} rounded-r`}
-              >
-                <div className="flex items-center">
-                  <Edit className="w-5 h-5 text-gray-600 mr-3" />
-                  <div>
-                    <div className="font-medium text-gray-900">{item.subject}</div>
-                    {item.page && <div className="text-sm text-gray-500">{item.page}</div>}
+            {assignments.map((item, i) => {
+              let priority = '';
+              let badgeColor = '';
+
+              if (item.status === 'Due') {
+                priority = 'High';
+                badgeColor = 'bg-red-600';
+              } else if (item.status === 'Open') {
+                priority = 'Medium';
+                badgeColor = 'bg-black';
+              } else if (item.status === 'Waiting') {
+                priority = 'Low';
+                badgeColor = 'bg-gray-500';
+              }
+
+              return (
+                <div
+                  key={i}
+                  className="flex items-center justify-between p-3  bg-white rounded-r"
+                >
+                 
+                  <div className="flex items-center space-x-3 ">
+                    
+                    <Edit className="w-5 h-5 text-black" />
+                    <div>
+                      <div className="font-medium text-black">{item.subject}</div>
+                      {item.page && <div className="text-sm text-gray-700">{item.page}</div>}
+                    </div>
+                  </div>
+
+                 
+                  <div className="text-right">
+                    <div className="text-sm text-black mt-1">{item.date}</div>
+                    <div className="flex items-center justify-end text-xs text-gray-600">
+                      <div className={`${badgeColor} text-white mr-5 px-2 py-1 rounded-full text-xs font-medium`}>
+                      {priority}
+                    </div>
+                      <Clock className="w-3 h-3 mr-1" />
+                      <span>Due soon</span>
+                    </div>
                   </div>
                 </div>
-                <div className="text-right">
-                  <div
-                    className={`${item.badgeColor} text-white px-2 py-1 rounded text-xs font-medium`}
-                  >
-                    {item.status}
-                  </div>
-                  <div className="text-sm text-gray-500 mt-1">{item.date}</div>
-                  <div className="text-xs text-gray-400">@ Due soon</div>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </Section>
 
-       
-        <Section title="Recent Activities">
+        <Section  title={
+            <div className="flex items-center space-x-2">
+              <Clock className="w-5 h-5 text-black" />
+              <span className="text-2xl text-black">Recent Activities</span>
+            </div>
+          }>
           {activities.map((a, i) => (
             <div key={i} className="flex items-center space-x-2 py-1">
               <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
@@ -164,7 +190,10 @@ export default function StudentDashboard() {
                   <span className="text-sm bg-gray-200 px-2 rounded">{p.grade}</span>
                 </div>
                 <div className="mt-2 h-2 bg-gray-200 rounded">
-                  <div className={`h-full rounded ${p.color}`} style={{ width: `${p.percent}%` }}></div>
+                  <div
+                    className={`h-full rounded ${p.color}`}
+                    style={{ width: `${p.percent}%` }}
+                  ></div>
                 </div>
                 <p className="text-xs text-right mt-1 text-gray-500">{p.percent}%</p>
               </div>
@@ -186,8 +215,8 @@ export default function StudentDashboard() {
 
 function StatBox({ title, value, Icon, iconBg }) {
   return (
-    <div className="bg-[#800000] p-4 rounded text-white">
-      <div className="flex bg-[#800000] items-center space-x-4">
+    <div className="bg-pink-100 p-4 rounded text-black">
+      <div className="flex items-center space-x-4">
         {Icon && (
           <div className={`p-2 rounded ${iconBg}`}>
             <Icon className="w-6 h-6 text-white" />
@@ -201,7 +230,6 @@ function StatBox({ title, value, Icon, iconBg }) {
     </div>
   );
 }
-
 
 function Section({ title, children }) {
   return (
