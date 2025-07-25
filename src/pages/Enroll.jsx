@@ -78,7 +78,7 @@ function Enroll() {
               </option>
               <option>Male</option>
               <option>Female</option>
-              <option>Other</option>
+              
             </select>
             <input
               type="text"
