@@ -1,8 +1,19 @@
-import React from "react";
+
 import bgImage from "./Rectangle.png";
 import { MapPin, Clock, Headphones } from "lucide-react";
+import React, { useState } from "react";
+
 
 function Contact() {
+  const [submitted, setSubmitted] = useState(false);
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  setSubmitted(true);
+  setTimeout(() => setSubmitted(false), 3000);
+  e.target.reset(); 
+};
+
   return (
     <>
       <div
@@ -73,32 +84,39 @@ function Contact() {
         <div className="bg-[#80000041] max-w-[90%] min-h-[542px]  mt-20 flex justify-center items-center mx-4 md:mx-20 rounded-md">
           <div className="w-full max-w-[1200px] flex flex-col md:flex-row justify-between items-start md:ml-10 md:mb-0 gap-10">
             <div className="w-full md:w-1/2 h-[346px] bg-[#ffffff94] rounded-md p-6">
-              <form className="flex flex-col gap-8">
-                <input
-                  type="text"
-                  placeholder="What's Your Name?"
-                  className="p-3 bg-[#80000046] rounded-md  placeholder:text-[#7A7A7A] font-roboto"
-                  required
-                />
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="p-3 bg-[#80000046] rounded-md  placeholder:text-[#7A7A7A] font-roboto "
-                  required
-                />
-                <textarea
-                  placeholder="Message"
-                  className="p-3 bg-[#80000046] rounded-md  placeholder:text-[#7A7A7A] font-roboto h-36 resize-none"
-                  required
-                ></textarea>
-              </form>
-              <button
-                type="submit"
-                className="bg-[#800000] text-white px-6 py-2 rounded-md w-fit mt-16  hover:bg-[#5e0000]"
-              >
-                Send Message
-              </button>
-            </div>
+  <form className="flex flex-col gap-8" onSubmit={handleSubmit}>
+    <input
+      type="text"
+      placeholder="What's Your Name?"
+      className="p-3 bg-[#80000046] rounded-md  placeholder:text-[#7A7A7A] font-roboto"
+      required
+    />
+    <input
+      type="email"
+      placeholder="Your email"
+      className="p-3 bg-[#80000046] rounded-md  placeholder:text-[#7A7A7A] font-roboto "
+      required
+    />
+    <textarea
+      placeholder="Message"
+      className="p-3 bg-[#80000046] rounded-md  placeholder:text-[#7A7A7A] font-roboto h-36 resize-none"
+      required
+    ></textarea>
+
+    <button
+      type="submit"
+      className="bg-[#800000] text-white px-6 py-2 rounded-md w-fit mt-4 hover:bg-[#5e0000]"
+    >
+      Send Message
+    </button>
+
+    {submitted && (
+      <p className="text-green-600 mt-4 font-semibold text-sm">
+        ✅ Message submitted!
+      </p>
+    )}
+  </form>
+</div>
 
             <div className="w-full md:w-1/2 p-2 mt-12">
               <h3 className="font-semibold font-roboto text-lg mb-2">

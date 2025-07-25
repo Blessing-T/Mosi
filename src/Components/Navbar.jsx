@@ -24,7 +24,7 @@ const Navbar = () => {
           ☰
         </button>
 
-        <ul className="hidden md:flex items-center space-x-6 text-white font-medium">
+        <ul className="hidden md:flex items-center space-x-6 text-white font-medium font-roboto">
           <li>
             <Link to="/" className="hover:text-red-200">
               Home
@@ -49,7 +49,7 @@ const Navbar = () => {
         </ul>
 
         <div className="hidden md:block">
-          <button className="bg-red-900 text-white px-4 py-2 rounded-md hover:bg-red-600 transition-colors">
+          <button className="bg-red-900 text-white px-4 py-2 rounded-md hover:bg-red-600 font-roboto transition-colors">
             <Link to="/portal">Portal</Link>
           </button>
         </div>

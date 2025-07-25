@@ -1,8 +1,17 @@
-import React from "react";
+
 import bgImage from "./Rectangle.png";
+import React, { useState } from "react";
 
 
 function Enroll() {
+  const [submitted, setSubmitted] = useState(false);
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 3000);
+    e.target.reset(); 
+  };
   return (
     <>
       <div
@@ -17,9 +26,9 @@ function Enroll() {
         </div>
       </div>
 
-      {/* Form Section */}
+      
       <div className=" px-4 mt-28 mb-20 flex items-center justify-center">
-        <form className="w-full max-w-4xl space-y-4 font-roboto ">
+        <form className="w-full max-w-4xl space-y-4 font-roboto " onSubmit={handleSubmit}>
           <div className="flex flex-col md:flex-row gap-4">
             <input
               type="text"
@@ -105,6 +114,11 @@ function Enroll() {
             Enroll Now
             
           </button>
+          {submitted && (
+      <p className="text-green-600 mt-4 font-semibold text-sm">
+        ✅ You have successfully enrolled!
+      </p>
+    )}
         </form>
       </div>
     </>
