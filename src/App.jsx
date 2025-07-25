@@ -10,7 +10,7 @@ import LoginIn from './pages/LoginIn'
 import Portal from './pages/Portal'
 import ComingSoon from './pages/ComingSoon';
 import SignIn from './pages/SignIn';
-import StudentDashboard from './pages/Student Portal'
+import StudentDashboard from './pages/Student-portal'
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
          <Route path="/ComingSoon" element={<ComingSoon />} />
         <Route path='/portal' element={<Portal />} />
         <Route path='/loginIn' element={<LoginIn />} />
-        <Route path='/Student Portal' element={<StudentDashboard />} />
+        <Route path='/Student-portal' element={<StudentDashboard />} />
       </Routes>
       <Footer />
     </div>
