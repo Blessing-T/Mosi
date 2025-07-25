@@ -56,7 +56,7 @@ const Navbar = () => {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden mt-4 flex flex-col space-y-2 items-end  text-white px-4">
+        <div className="md:hidden mt-4 flex flex-col space-y-2 items-end bg-white  text-black px-4">
           <Link to="/" className="hover:text-red-200">
             Home
           </Link>
