@@ -1,6 +1,6 @@
 import React from "react";
 import bgImage from "./Rectangle225.png";
-import { Link } from "react-router-dom";
+
 
 
 function SignIn() {
@@ -17,7 +17,7 @@ function SignIn() {
     alert("Please fill in all fields before signing in");
     return;
   }
-    window.location.href = "/Student Portal";
+    window.location.href = "/Student-portal";
   };
 
   return (
