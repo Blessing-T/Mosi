@@ -110,45 +110,78 @@ const MosiOaTunyaWebsite = () => {
           initial={{ x: 400, y: 150 }}
           speed={2.8}
         />
+ <div className="relative bg-white">
+      
+      <div className="flex justify-center py-4">
+        <div className="bg-red-200 rounded-full px-6 py-3 flex items-center gap-3 shadow-md mt-24">
+         
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 text-red-700"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 14l9-5-9-5-9 5 9 5z"
+            />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5a12.083 12.083 0 01-6.16-10.922L12 14z"
+            />
+          </svg>
+         
+          <span className="text-2xl font-bold text-red-800">1368</span>
+          <span className="text-red-600">+</span>
+          <span className="text-sm text-red-600">active Students</span>
+        </div>
+        
+      </div>
 
-        <div className="container mx-auto px-4 md:px-6 py-10 md:py-20 relative z-10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="flex-1 max-w-xl">
-              <div className="flex items-center mb-6">
-                <div className="bg-red-200 rounded-full px-6 py-3 items-center flex justify-center gap-4 space-x-2">
-                  <span className="text-2xl font-bold text-red-800">1368</span>
-                  <span className="text-red-600">+</span>
-                </div>
-              </div>
-              <p className="text-3xl md:text-5xl font-bold text-red-900 mb-6 leading-tight">
-                Welcome to
-                <br />
-                <span className="text-red-700">Mosi-Oa-Tunya</span>
-                <br />
-                <span className="text-red-700">High School</span>
-              </p>
-              <p className="text-gray-700 text-base md:text-lg mb-8 leading-relaxed">
-                We inspire excellence, foster growth, and celebrate
-                achievements. Together, let's embark on a journey of learning
-                and discovery!
-              </p>
+    
+      <div className="container mx-auto px-4 md:px-6 py-10 md:py-20">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+         
+          <div className="flex-1 max-w-xl w-full">
+            <p className="text-3xl md:text-5xl font-bold text-red-900 mb-6 leading-tight text-center md:text-left">
+              Welcome to
+              <br />
+              <span className="text-red-700">Mosi-Oa-Tunya</span>
+              <br />
+              <span className="text-red-700">High School</span>
+            </p>
+
+            <p className="text-gray-700 text-base md:text-lg mb-8 leading-relaxed text-center md:text-left">
+              We inspire excellence, foster growth, and celebrate
+              achievements. Together, let's embark on a journey of learning
+              and discovery!
+            </p>
+
+            <div className="flex justify-center md:justify-start">
               <button className="bg-red-800 text-white px-6 md:px-8 py-3 rounded-md hover:bg-gray-800 transition-colors">
-              <Link to="/enroll">
-                Enroll Now
-              </Link>
+                <Link to="/enroll">Enroll Now</Link>
               </button>
             </div>
-            <div className="flex-1 flex justify-center md:justify-end w-full">
-              <div className="relative w-64 object-cover md:w-80">
-                <img
-                  src={"/Frame 34.png"}
-                  alt="Students in graduation gowns"
-                  className="rounded-lg shadow-lg w-[900px]"
-                />
-              </div>
+          </div>
+
+          
+          <div className="flex-1 flex justify-center md:justify-end w-full">
+            <div className="relative w-64 object-cover md:w-80">
+              <img
+                src="/Frame 34.png"
+                alt="Students in graduation gowns"
+                className="rounded-lg shadow-lg w-[900px]"
+              />
             </div>
           </div>
         </div>
+      </div>
+    </div>
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 120" className="w-full h-20">
             <path
