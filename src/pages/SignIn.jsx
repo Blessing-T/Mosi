@@ -17,7 +17,7 @@ function SignIn() {
     alert("Please fill in all fields before signing in");
     return;
   }
-    window.location.href = "/Student-portal";
+    window.location.href = "/Student Portal";
   };
 
   return (
